@@ -1,7 +1,9 @@
+// Gallery modal
+var imageModal = document.getElementById('imageModal');
+var modalImage = document.getElementById('modalImage');
 
-function openModal(imagePath) {
-    var modalImage = document.getElementById('modalImage');
-    modalImage.src = imagePath;
-    var imageModal = new bootstrap.Modal(document.getElementById('imageModal'));
-    imageModal.show();
-}
+imageModal.addEventListener('show.bs.modal', function (event) {
+    var image = event.relatedTarget.querySelector('img');
+    modalImage.src = image.src;
+    modalImage.alt = image.alt;
+});

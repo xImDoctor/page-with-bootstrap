@@ -1,152 +1,312 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en" data-bs-theme="dark">
 
 <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Andrew Page</title>
+    <meta name="description" content="Andrew ImDoctor - software developer working on machine learning, systems and games.">
+    <title>About me | Andrew ImDoctor</title>
 
     <!-- Bootstrap CSS (jsDelivr CDN) -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Bootstrap Icons (jsDelivr CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"
+        integrity="sha384-XGjxtQfXaH2tnPFa9x+ruJTuLE3Aa6LhHSWRr1XeTyhezb4abCG4ccI5AkVDxqC+" crossorigin="anonymous">
 
+    <style>
+        [data-bs-theme="dark"] {
+            --bs-body-bg: #0d0f0e;
+            --bs-body-bg-rgb: 13, 15, 14;
+            --bs-body-color: #eaf0eb;
+            --bs-secondary-color: #b4c1b7;
+            --bs-secondary-bg: #19251d;
+            --bs-tertiary-bg: #131a15;
+            --bs-tertiary-bg-rgb: 19, 26, 21;
+            --bs-border-color: #354239;
+            --bs-success-text-emphasis: #a9d3b2;
+            --bs-link-color-rgb: 169, 211, 178;
+            --bs-link-hover-color-rgb: 202, 234, 210;
+        }
+    </style>
 </head>
 
 <body>
-    <header class="bg-dark py-3">
-        <div class="container">
-            <h1 class="text-light">Andrew xImDoctor</h1>
-            <p class="lead text-light">Добро пожаловать на мою страницу!</p>
+    <header class="border-bottom bg-body-tertiary">
+        <div class="container py-3 d-flex align-items-center justify-content-between flex-wrap gap-2">
+            <a href="https://ximdoctor.github.io/" class="link-body-emphasis text-decoration-none">Back to portfolio</a>
+            <a href="https://github.com/xImDoctor" class="btn btn-sm btn-outline-light">GitHub profile</a>
         </div>
     </header>
 
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>Обо мне</h2>
-                <p>Я Андрей, или ImDoctor, программист, изучающий сейчас веб-технологии, а это моя веб-страница,
-                    созданная
-                    при помощи Bootstrap5</p>
+    <main class="container py-4 py-md-5">
+        <!-- About me -->
+        <section class="row mb-5" aria-labelledby="about-heading">
+            <div class="col-lg-9">
+                <p class="font-monospace text-success-emphasis mb-2">@xImDoctor</p>
+                <h1 class="display-4 fw-semibold mb-3" id="about-heading">Andrew ImDoctor</h1>
+                <p class="lead text-body-secondary mb-0">I'm a software developer working on handwriting recognition,
+                    exploring AI safety, and building games and systems in C and C++.</p>
             </div>
-            <div class="col-md-6">
-                <h2>Навыки и технологии</h2>
-                <ul>
-                    <li><i class="bi bi-braces"></i> C/C++</li>
-                    <li><i class="bi bi-filetype-py"></i> Python</li>
-                    <li><i class="bi bi-code-square"></i> Qt5</li>
-                    <li><i class="bi bi-filetype-html"></i> HTML5</li>
-                    <li><i class="bi bi-filetype-css"></i> CSS3</li>
-                    <li><i class="bi bi-git"></i> Git</li>
-                </ul>
+        </section>
+
+        <!-- Selected projects -->
+        <section class="mb-5" aria-labelledby="projects-heading">
+            <div class="d-flex align-items-baseline justify-content-between flex-wrap gap-2 mb-3">
+                <h2 class="h3 mb-0" id="projects-heading">Selected projects</h2>
+                <a href="https://github.com/xImDoctor?tab=repositories">All public repositories</a>
             </div>
-        </div>
-
-
-
-    </section>
-
-
-    <section class="container mt-5">
-        <div class="row mt-8">
-            <div class="col-md-8">
-                <h2>Мои репозитории</h2>
-                <dl class="row">
-                    <dt class="col-sm-3"><a href="https://github.com/xImDoctor/SnakeConsoleGame" target="_blank">Snake
-                            Console Game</a></dt>
-                    <dd class="col-sm-9">The snake game created using Windows API for Windows console</dd>
-
-                    <dt class="col-sm-3"><a href="https://github.com/xImDoctor/GuessTheWordGame" target="_blank">Guess
-                            the Word Game</a></dt>
-                    <dd class="col-sm-9">The first game project to introduce opportunites of Windows API in the console
-                    </dd>
-
-                    <dt class="col-sm-3"><a href="https://github.com/xImDoctor/WindowsConsoleColor"
-                            target="_blank">Windows Console Color</a></dt>
-                    <dd class="col-sm-9">Program that randomly prints symbols 0 and 1 using different colors (WinAPI)
-                    </dd>
-                    
-                    <dt class="col-sm-3"><a href="https://github.com/xImDoctor/html-css-js-labs"
-                            target="_blank">HTML, CSS, JS lab works</a></dt>
-                    <dd class="col-sm-9">This repo contains files, code and etc made by me on univ lab works
-                    </dd>
-
-                    <dt class="col-sm-3"><a href="https://github.com/xImDoctor/docVector" target="_blank">docVector</a>
-                    </dt>
-                    <dd class="col-sm-9">Vector class example as object-oriented programming test work using C++</dd>
-                </dl>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-3">
+                <div class="col">
+                    <article class="card h-100 bg-body-tertiary">
+                        <div class="card-body d-flex flex-column">
+                            <p class="small text-success-emphasis mb-2">Machine Learning</p>
+                            <h3 class="h5 card-title">Handwritten Math Recognition</h3>
+                            <p class="card-text text-body-secondary">Recognizes handwritten mathematical expressions and exports them as LaTeX.</p>
+                            <a href="https://github.com/xImDoctor/hme-recognition-app" class="mt-auto align-self-start"
+                                aria-label="View repository for Handwritten Math Recognition">View repository</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 bg-body-tertiary">
+                        <div class="card-body d-flex flex-column">
+                            <p class="small text-success-emphasis mb-2">Machine Learning</p>
+                            <h3 class="h5 card-title">Russian Handwriting Recognition</h3>
+                            <p class="card-text text-body-secondary">Uses a CRNN model to recognize Russian handwriting in document images.</p>
+                            <a href="https://github.com/xImDoctor/hand-crnn-app" class="mt-auto align-self-start"
+                                aria-label="View repository for Russian Handwriting Recognition">View repository</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 bg-body-tertiary">
+                        <div class="card-body d-flex flex-column">
+                            <p class="small text-success-emphasis mb-2">AI Safety</p>
+                            <h3 class="h5 card-title">propagate-bench</h3>
+                            <p class="card-text text-body-secondary">A team research project on free-riding when LLM agents share knowledge.</p>
+                            <a href="https://github.com/xImDoctor/propagate-bench" class="mt-auto align-self-start"
+                                aria-label="View repository for propagate-bench">View repository</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 bg-body-tertiary">
+                        <div class="card-body d-flex flex-column">
+                            <p class="small text-success-emphasis mb-2">AI Safety</p>
+                            <h3 class="h5 card-title">Technical AI Safety Roadmap</h3>
+                            <p class="card-text text-body-secondary">A mind map of topics and concepts from the Technical AI Safety course.</p>
+                            <a href="https://github.com/xImDoctor/tech-ai-safety-mindmap" class="mt-auto align-self-start"
+                                aria-label="View repository for Technical AI Safety Roadmap">View repository</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 bg-body-tertiary">
+                        <div class="card-body d-flex flex-column">
+                            <p class="small text-success-emphasis mb-2">Systems &amp; Games</p>
+                            <h3 class="h5 card-title">AndEngine</h3>
+                            <p class="card-text text-body-secondary">A lightweight 2.5D raycasting engine built in C++ with an OpenGL renderer.</p>
+                            <a href="https://github.com/xImDoctor/AndEngine" class="mt-auto align-self-start"
+                                aria-label="View repository for AndEngine">View repository</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="card h-100 bg-body-tertiary">
+                        <div class="card-body d-flex flex-column">
+                            <p class="small text-success-emphasis mb-2">Systems &amp; Games</p>
+                            <h3 class="h5 card-title">Flotilla</h3>
+                            <p class="card-text text-body-secondary">An Android naval battle game built with Kotlin and Jetpack Compose.</p>
+                            <a href="https://github.com/xImDoctor/Flotilla" class="mt-auto align-self-start"
+                                aria-label="View repository for Flotilla">View repository</a>
+                        </div>
+                    </article>
+                </div>
             </div>
-        </div>
-    </section>
 
+            <div class="mt-3 p-3 border rounded bg-body-tertiary">
+                <h3 class="h6 mb-2">Mentoring at Sirius Summer</h3>
+                <p class="text-body-secondary mb-0">I mentor a team developing a system to estimate student engagement
+                    while watching educational videos.
+                    <a href="https://github.com/xImDoctor/determining-the-degree-of-involvement">View the project</a>
+                </p>
+            </div>
+        </section>
 
-    <div class="modal fade" id="imageModal" tabindex="-1"  aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <!-- Skills -->
+        <section class="mb-5" aria-labelledby="skills-heading">
+            <h2 class="h3 mb-3" id="skills-heading">Skills</h2>
+            <div class="row row-cols-1 row-cols-md-3 g-3">
+                <div class="col">
+                    <article class="h-100 p-3 border rounded">
+                        <h3 class="h6 text-success-emphasis">ML &amp; Data</h3>
+                        <ul class="list-unstyled d-flex flex-wrap gap-2 mb-3">
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-filetype-py text-success-emphasis" aria-hidden="true"></i> Python
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-cpu text-success-emphasis" aria-hidden="true"></i> PyTorch
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-diagram-3 text-success-emphasis" aria-hidden="true"></i> scikit-learn
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-grid-3x3 text-success-emphasis" aria-hidden="true"></i> NumPy
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-table text-success-emphasis" aria-hidden="true"></i> pandas
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-bar-chart text-success-emphasis" aria-hidden="true"></i> Streamlit
+                            </li>
+                        </ul>
+                        <p class="small text-body-secondary mb-0">Handwriting recognition and interactive data tools</p>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="h-100 p-3 border rounded">
+                        <h3 class="h6 text-success-emphasis">Systems &amp; Games</h3>
+                        <ul class="list-unstyled d-flex flex-wrap gap-2 mb-3">
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-file-earmark-code text-success-emphasis" aria-hidden="true"></i> C
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-braces text-success-emphasis" aria-hidden="true"></i> C++
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-terminal text-success-emphasis" aria-hidden="true"></i> Linux
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-box text-success-emphasis" aria-hidden="true"></i> OpenGL
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-tools text-success-emphasis" aria-hidden="true"></i> CMake
+                            </li>
+                        </ul>
+                        <p class="small text-body-secondary mb-0">Raycasting, rendering and networked games</p>
+                    </article>
+                </div>
+                <div class="col">
+                    <article class="h-100 p-3 border rounded">
+                        <h3 class="h6 text-success-emphasis">Web &amp; Mobile</h3>
+                        <ul class="list-unstyled d-flex flex-wrap gap-2 mb-3">
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-filetype-html text-success-emphasis" aria-hidden="true"></i> HTML
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-filetype-css text-success-emphasis" aria-hidden="true"></i> CSS
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-filetype-js text-success-emphasis" aria-hidden="true"></i> JavaScript
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-hdd-network text-success-emphasis" aria-hidden="true"></i> FastAPI
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-phone text-success-emphasis" aria-hidden="true"></i> Kotlin
+                            </li>
+                            <li class="d-inline-flex align-items-center gap-2 px-2 py-1 rounded bg-body-tertiary small">
+                                <i class="bi bi-layers text-success-emphasis" aria-hidden="true"></i> Jetpack Compose
+                            </li>
+                        </ul>
+                        <p class="small text-body-secondary mb-0">Web interfaces and native Android development</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery -->
+        <section aria-labelledby="gallery-heading">
+            <h2 class="h3 mb-3" id="gallery-heading">Gallery</h2>
+            <div id="imageCarousel" class="carousel slide border rounded overflow-hidden bg-body-tertiary"
+                aria-label="Gallery of screenshots">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="ratio ratio-21x9 bg-black">
+                            <button type="button" class="btn p-0 rounded-0" data-bs-toggle="modal"
+                                data-bs-target="#imageModal" aria-label="Open image: A coding challenge submission and its test result">
+                                <img src="image-carousel/work/img2.png" class="w-100 h-100 object-fit-contain"
+                                    alt="A coding challenge submission and its test result">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="ratio ratio-21x9 bg-black">
+                            <button type="button" class="btn p-0 rounded-0" data-bs-toggle="modal"
+                                data-bs-target="#imageModal" aria-label="Open image: Source code beside its console output">
+                                <img src="image-carousel/work/img3.png" class="w-100 h-100 object-fit-contain"
+                                    alt="Source code beside its console output">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="ratio ratio-21x9 bg-black">
+                            <button type="button" class="btn p-0 rounded-0" data-bs-toggle="modal"
+                                data-bs-target="#imageModal" aria-label="Open image: League of Legends profile and ranked stats">
+                                <img src="image-carousel/lol/img3.png" class="w-100 h-100 object-fit-contain"
+                                    alt="League of Legends profile and ranked stats">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="ratio ratio-21x9 bg-black">
+                            <button type="button" class="btn p-0 rounded-0" data-bs-toggle="modal"
+                                data-bs-target="#imageModal" aria-label="Open image: A League of Legends match">
+                                <img src="image-carousel/lol/img2.png" class="w-100 h-100 object-fit-contain"
+                                    alt="A League of Legends match">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="ratio ratio-21x9 bg-black">
+                            <button type="button" class="btn p-0 rounded-0" data-bs-toggle="modal"
+                                data-bs-target="#imageModal" aria-label="Open image: The in-game cooking menu in Genshin Impact">
+                                <img src="image-carousel/cook/img1.png" class="w-100 h-100 object-fit-contain"
+                                    alt="The in-game cooking menu in Genshin Impact">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev opacity-100" type="button" data-bs-target="#imageCarousel"
+                    data-bs-slide="prev">
+                    <span class="bi bi-chevron-left fs-5 lh-1 p-2 rounded-circle bg-black text-white"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous image</span>
+                </button>
+                <button class="carousel-control-next opacity-100" type="button" data-bs-target="#imageCarousel"
+                    data-bs-slide="next">
+                    <span class="bi bi-chevron-right fs-5 lh-1 p-2 rounded-circle bg-black text-white"
+                        aria-hidden="true"></span>
+                    <span class="visually-hidden">Next image</span>
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="image-modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
             <div class="modal-content">
-                <button type="button" class="btn-close position-absolute top-0 end-0 m-3" data-bs-dismiss="modal"
-                    aria-label="Close"></button>
-                <div class="modal-body d-flex justify-content-center align-items-center p-0">
-                    <img id="modalImage" src="#" class="img-fluid" alt="Full-sized Image">
+                <div class="modal-header">
+                    <h2 class="h5 modal-title" id="image-modal-title">Screenshot</h2>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body bg-black text-center p-0">
+                    <img id="modalImage" class="img-fluid" alt="">
                 </div>
             </div>
         </div>
     </div>
 
-
-    <div class="container mt-5">
-        <h3 class="mb-4">Некоторые изображения из <strong>моей жизни</strong></h3>
-        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active" onclick="openModal('image-carousel/work/img2.png')">
-                    <img src="image-carousel/work/img2.png" class="d-block w-100"
-                        style="height: 400px; object-fit: cover;" alt="Image 1">
-                </div>
-                <div class="carousel-item" onclick="openModal('image-carousel/work/img3.png')">
-                    <img src="image-carousel/work/img3.png" class="d-block w-100"
-                        style="height: 400px; object-fit: cover;" alt="Image 2">
-                </div>
-                <div class="carousel-item" onclick="openModal('image-carousel/lol/img3.png')">
-                    <img src="image-carousel/lol/img3.png" class="d-block w-100"
-                        style="height: 400px; object-fit: cover;" alt="Image 3">
-                </div>
-                <div class="carousel-item" onclick="openModal('image-carousel/lol/img2.png')">
-                    <img src="image-carousel/lol/img2.png" class="d-block w-100"
-                        style="height: 400px; object-fit: cover;" alt="Image 4">
-                </div>
-                <div class="carousel-item" onclick="openModal('image-carousel/lol/img3.png')">
-                    <img src="image-carousel/lol/img3.png" class="d-block w-100"
-                        style="height: 400px; object-fit: cover;" alt="Image 5">
-                </div>
-                <div class="carousel-item" onclick="openModal('image-carousel/cook/img1.png')">
-                    <img src="image-carousel/cook/img1.png" class="d-block w-100"
-                        style="height: 400px; object-fit: cover;" alt="Image 5">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </div>
-
-
-
-    <footer class="bg-dark py-3 mt-5">
-        <div class="container">
-            <div class="d-flex justify-content-end align-items-center">
-                <p class="text-light me-3 mb-0">&copy; 2024, Andrew xImDoctor</p>
-                <a href="https://github.com/xImDoctor" target="_blank" class="text-light me-3">
-                    <!-- <i class="bi bi-github"></i> -->
-                    <img src="https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/github.svg" alt="GitHub"
-                        style="height: 1.5rem; filter: invert(1);">
-                </a>
-            </div>
+    <footer class="border-top bg-body-tertiary py-3">
+        <div class="container d-flex justify-content-between flex-wrap gap-2 small">
+            <span class="text-body-secondary">&copy; 2024–2026, Andrew ImDoctor</span>
+            <a href="https://github.com/xImDoctor" class="d-inline-flex align-items-center link-body-emphasis"
+                aria-label="GitHub profile">
+                <i class="bi bi-github fs-4 lh-1" aria-hidden="true"></i>
+            </a>
         </div>
     </footer>
 
@@ -154,7 +314,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-    <script src="src/open.js"></script>
+    <script defer src="src/open.js"></script>
 </body>
 
 </html>
